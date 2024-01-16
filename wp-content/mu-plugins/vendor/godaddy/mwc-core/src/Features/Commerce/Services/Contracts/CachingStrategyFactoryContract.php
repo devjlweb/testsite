@@ -1,0 +1,16 @@
+<?php
+
+namespace GoDaddy\WordPress\MWC\Core\Features\Commerce\Services\Contracts;
+
+/**
+ * Provides the default method signatures to a caching strategy factory.
+ */
+interface CachingStrategyFactoryContract
+{
+    /**
+     * Gets a {@see CachingStrategyContract} concrete implementation instance.
+     *
+     * @return CachingStrategyContract
+     */
+    public function makeCachingStrategy() : CachingStrategyContract;
+}
